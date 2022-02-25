@@ -7,6 +7,9 @@
     font-family: 'Rubik', sans-serif;
 }
 
+html {
+    height: 100vh;
+}
 
 /* # Front-end Style Guide
 
