@@ -5,19 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
-    
+    <link rel="stylesheet" href="./css/style.css">
     
     <title>Time-Tracking-Dashboard</title>
 </head>
-<body class="max-w-md">
-    <div id="container" class="bg-black flex justify-center">
-        <div id="profile-container " class="bg-indigo-800 rounded-xl w-full m-5">
+<body class="max-w-md box-border">
+    <div id="container" class="h-auto bg-black flex flex-col">
+
+        <!-- Profile -->
+        <div id="profile-container " class="bg-indigo-900 rounded-xl m-5 ">
             <div id="upper-profile" class="bg-indigo-500 flex justify-center rounded-xl ">
                 <div id="img-div" class="w-16 rounded-full border-2 m-5">
-                    <img src="./images/image-jeremy.png " class="size-16" alt="">
+                    <img src="./images/image-jeremy.png "  alt="">
                 </div>
                 <div class="justify-between">
                     <p class="pt-7 text-indigo-200">Report for</p>
@@ -30,6 +29,116 @@
                 <p class="text-indigo-400">Monthly</p>
             </div>
         </div>
+
+        <!-- time container -->
+        <div id="background-container" class="mb-5 relative rounded-xl h-36 ml-5 mr-5 bg-[#FF8C65] overflow-hidden">
+            <img src="./images/icon-work.svg" class="absolute right-0 bottom-20 right-3 z-10" alt="" srcset="">
+            <div id="timer-container" class="absolute justify-between w-full flex bg-indigo-900 rounded-xl h-60 mt-8 z-20">
+                <div id="left-content" class="gap-y-6">
+                    <h6 class="text-white ml-6 mt-5">Play</h6>
+                    <h3 class="text-white text-3xl ml-6 mt-2">4hrs</h3>
+                </div>
+                <div id="right-content" class="flex items-end flex-col">
+                    <div class="mr-6 mt-8">
+                        <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+                    </div>
+                    <p class=" mr-6 mt-7 text-white text-xs">Last Week - 7hours</p>
+                </div>
+    
+            </div>
+        </div>
+
+        <!-- time container -->
+        <div id="background-container" class="mb-5 relative rounded-xl h-36 ml-5 mr-5 bg-[#56C1E5] overflow-hidden">
+            <img src="./images/icon-play.svg" class="absolute right-0 bottom-20 right-3 z-10" alt="" srcset="">
+            <div id="timer-container" class="absolute justify-between w-full flex bg-indigo-900 rounded-xl h-60 mt-8 z-20">
+                <div id="left-content" class="gap-y-6">
+                    <h6 class="text-white ml-6 mt-5">Play</h6>
+                    <h3 class="text-white text-3xl ml-6 mt-2">4hrs</h3>
+                </div>
+                <div id="right-content" class="flex items-end flex-col">
+                    <div class="mr-6 mt-8">
+                        <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+                    </div>
+                    <p class=" mr-6 mt-7 text-white text-xs">Last Week - 7hours</p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- time container -->
+        <div id="background-container" class="mb-5 relative rounded-xl h-36 ml-5 mr-5 bg-[#FF5B7C] overflow-hidden">
+            <img src="./images/icon-study.svg" class="absolute right-0 bottom-20 right-3 z-10" alt="" srcset="">
+            <div id="timer-container" class="absolute justify-between w-full flex bg-indigo-900 rounded-xl h-60 mt-8 z-20">
+                <div id="left-content" class="gap-y-6">
+                    <h6 class="text-white ml-6 mt-5">Play</h6>
+                    <h3 class="text-white text-3xl ml-6 mt-2">4hrs</h3>
+                </div>
+                <div id="right-content" class="flex items-end flex-col">
+                    <div class="mr-6 mt-8">
+                        <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+                    </div>
+                    <p class=" mr-6 mt-7 text-white text-xs">Last Week - 7hours</p>
+                </div>
+    
+            </div>
+        </div>
+
+        
+        <!-- time container -->
+        <div id="background-container" class="mb-5 relative rounded-xl h-36 ml-5 mr-5 bg-[#49CE81] overflow-hidden">
+            <img src="./images/icon-exercise.svg" class="absolute right-0 bottom-22 right-3 z-10" alt="" srcset="">
+            <div id="timer-container" class="absolute justify-between w-full flex bg-indigo-900 rounded-xl h-60 mt-8 z-20">
+                <div id="left-content" class="gap-y-6">
+                    <h6 class="text-white ml-6 mt-5">Play</h6>
+                    <h3 class="text-white text-3xl ml-6 mt-2">4hrs</h3>
+                </div>
+                <div id="right-content" class="flex items-end flex-col">
+                    <div class="mr-6 mt-8">
+                        <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+                    </div>
+                    <p class=" mr-6 mt-7 text-white text-xs">Last Week - 7hours</p>
+                </div>
+    
+            </div>
+        </div>
+
+        <!-- time container -->
+        <div id="background-container" class="mb-5 relative rounded-xl h-36 ml-5 mr-5 bg-[#7436D2] overflow-hidden">
+            <img src="./images/icon-social.svg" class="absolute right-0 bottom-20 right-3 z-10" alt="" srcset="">
+            <div id="timer-container" class="absolute justify-between w-full flex bg-indigo-900 rounded-xl h-60 mt-8 z-20">
+                <div id="left-content" class="gap-y-6">
+                    <h6 class="text-white ml-6 mt-5">Play</h6>
+                    <h3 class="text-white text-3xl ml-6 mt-2">4hrs</h3>
+                </div>
+                <div id="right-content" class="flex items-end flex-col">
+                    <div class="mr-6 mt-8">
+                        <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+                    </div>
+                    <p class=" mr-6 mt-7 text-white text-xs">Last Week - 7hours</p>
+                </div>
+    
+            </div>
+        </div>
+
+        <!-- time container -->
+        <div id="background-container" class="mb-5 relative rounded-xl h-36 ml-5 mr-5 bg-[#F0C65A] overflow-hidden">
+            <img src="./images/icon-self-care.svg" class="absolute bottom-24 right-3 z-10" alt="" srcset="">
+            <div id="timer-container" class="absolute justify-between w-full flex bg-indigo-900 rounded-xl h-60 mt-8 z-20">
+                <div id="left-content" class="gap-y-6">
+                    <h6 class="text-white ml-6 mt-5">Play</h6>
+                    <h3 class="text-white text-3xl ml-6 mt-2">4hrs</h3>
+                </div>
+                <div id="right-content" class="flex items-end flex-col">
+                    <div class="mr-6 mt-8">
+                        <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+                    </div>
+                    <p class=" mr-6 mt-7 text-white text-xs">Last Week - 7hours</p>
+                </div>
+    
+            </div>
+        </div>
+
     </div>
 </body>
 </html>
