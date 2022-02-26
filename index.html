@@ -11,136 +11,146 @@
     
     <title>Time-Tracking-Dashboard</title>
 </head>
-<body class="max-w-md box-border">
-    <div id="container" class="h-auto bg-black flex flex-col">
+<body class="bg-[#0f1424] lg:pt-16">
+    <div id="container" class="bg-[#0f1424] flex flex-col lg:flex-row lg:h-4/5">
 
         <!-- Profile -->
-        <div id="profile-container " class="bg-indigo-900 rounded-xl m-5 ">
-            <div id="upper-profile" class="bg-indigo-500 flex justify-center rounded-xl ">
-                <div id="img-div" class="w-16 rounded-full border-2 m-5">
-                    <img src="./images/image-jeremy.png "  alt="">
-                </div>
-                <div class="justify-between">
-                    <p class="pt-7 text-indigo-200">Report for</p>
-                    <p class="text-white text-xl">Jeremy Robson</p>
-                </div>
-            </div>
-            <div id="lower-profile" class="flex justify-around pt-3 pb-3">
-                <p daily class="text-indigo-400 cursor-pointer">Daily</p>
-                <p weekly class="text-white cursor-pointer">Weekly</p>
-                <p monthly class="text-indigo-400 cursor-pointer">Monthly</p>
-            </div>
-        </div>
-
-        <!-- time container -->
-        <div id="background-container" class="mb-5 relative rounded-xl h-36 ml-5 mr-5 bg-[#FF8C65] overflow-hidden">
-            <img src="./images/icon-work.svg" class="absolute right-0 bottom-20 right-3 z-10" alt="" srcset="">
-            <div id="timer-container" class="absolute justify-between w-full flex bg-indigo-900 rounded-xl h-60 mt-8 z-20">
-                <div id="left-content" class="gap-y-6">
-                    <h6 timer-title class="text-white ml-6 mt-5">No Data</h6>
-                    <h3 current-hours class="text-white text-3xl ml-6 mt-2">No Data</h3>
-                </div>
-                <div id="right-content" class="flex items-end flex-col">
-                    <div class="mr-6 mt-8">
-                        <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+        <div desktop-div class="lg:w-1/4 lg:h-full ">
+            <div id="profile-container " class="bg-[#6f76c8] rounded-xl m-5 lg:m-0 lg:ml-5 lg:h-full">
+                <div id="upper-profile" class="bg-[#6f76c8] flex justify-center lg:flex-col lg:h-2/3 rounded-xl ">
+                    <div id="img-div" class="w-16 lg:w-24 border-2 rounded-full m-5 lg:m-0 lg:ml-5">
+                        <img src="./images/image-jeremy.png "  alt="">
                     </div>
-                    <p previous-hours class=" mr-6 mt-7 text-white text-xs">No Data</p>
-                </div>
-    
-            </div>
-        </div>
-
-        <!-- time container -->
-        <div id="background-container" class="mb-5 relative rounded-xl h-36 ml-5 mr-5 bg-[#56C1E5] overflow-hidden">
-            <img src="./images/icon-play.svg" class="absolute right-0 bottom-20 right-3 z-10" alt="" srcset="">
-            <div id="timer-container" class="absolute justify-between w-full flex bg-indigo-900 rounded-xl h-60 mt-8 z-20">
-                <div id="left-content" class="gap-y-6">
-                    <h6 timer-title class="text-white ml-6 mt-5">No Data</h6>
-                    <h3 current-hours class="text-white text-3xl ml-6 mt-2">No Data</h3>
-                </div>
-                <div id="right-content" class="flex items-end flex-col">
-                    <div class="mr-6 mt-8">
-                        <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+                    <div class="justify-between">
+                        <p class="pt-7 text-indigo-200 lg:ml-5 text-[#bdc1ff">Report for</p>
+                        <div class="flex flex-row lg:flex-col">
+                            <p class="text-white text-xl lg:ml-5 lg:text-4xl">Jeremy</p>
+                            <p class="text-white text-xl ml-1 lg:ml-5 lg:text-4xl">Robson</p>
+                        </div>    
                     </div>
-                    <p previous-hours class=" mr-6 mt-7 text-white text-xs">No Data</p>
                 </div>
-
+                <div id="lower-profile" class="flex justify-around lg:flex-col pt-3 pb-3">
+                    <p daily class="text-[#bdc1ff] cursor-pointer lg:ml-5 lg:pb-3 hover:text-white">Daily</p>
+                    <p weekly class="text-white cursor-pointer lg:ml-5 lg:pb-3 hover:text-white">Weekly</p>
+                    <p monthly class="text-[#bdc1ff] cursor-pointer lg:ml-5 lg:pb-3 hover:text-white">Monthly</p>
+                </div>
             </div>
         </div>
 
-        <!-- time container -->
-        <div id="background-container" class="mb-5 relative rounded-xl h-36 ml-5 mr-5 bg-[#FF5B7C] overflow-hidden">
-            <img src="./images/icon-study.svg" class="absolute right-0 bottom-20 right-3 z-10" alt="" srcset="">
-            <div id="timer-container" class="absolute justify-between w-full flex bg-indigo-900 rounded-xl h-60 mt-8 z-20">
-                <div id="left-content" class="gap-y-6">
-                    <h6 timer-title class="text-white ml-6 mt-5">No Data</h6>
-                    <h3 current-hours class="text-white text-3xl ml-6 mt-2">No Data</h3>
-                </div>
-                <div id="right-content" class="flex items-end flex-col">
-                    <div class="mr-6 mt-8">
-                        <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+        <!-- time container-->
+        <div desktop-div class="lg:w-1/4 ">
+            <div id="background-container" class="mb-5 relative rounded-xl h-36 ml-5 mr-5 bg-[#FF8C65] overflow-hidden lg:h-1/2">
+                <img src="./images/icon-work.svg" class="absolute right-0 bottom-20 lg:bottom-44 right-3 z-10" alt="" srcset="">
+                <div id="timer-container" class="absolute lg:flex lg:flex-col w-full bg-[#1c1f4a] rounded-xl h-60 mt-8 z-20">
+                    <div id="upper-content" class="flex justify-between lg:mb-10">
+                        <h6 timer-title class="text-white ml-6 mt-5">No Data</h6>
+                        <div class="mr-6 mt-8">
+                            <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+                        </div>
                     </div>
-                    <p previous-hours class=" mr-6 mt-7 text-white text-xs">No Data</p>
-                </div>
-    
-            </div>
-        </div>
-
+                    <div id="lower-content" class="flex justify-between lg:flex-col">
+                        <h3 current-hours class="text-white text-5xl ml-6 mt-2">No Data</h3>
+                        <p previous-hours class=" mr-6 mt-7 text-[#bdc1ff] ml-6 text-xs">No Data</p>
+                    </div>
         
-        <!-- time container -->
-        <div id="background-container" class="mb-5 relative rounded-xl h-36 ml-5 mr-5 bg-[#49CE81] overflow-hidden">
-            <img src="./images/icon-exercise.svg" class="absolute right-0 bottom-22 right-3 z-10" alt="" srcset="">
-            <div id="timer-container" class="absolute justify-between w-full flex bg-indigo-900 rounded-xl h-60 mt-8 z-20">
-                <div id="left-content" class="gap-y-6">
-                    <h6 timer-title class="text-white ml-6 mt-5">No Data</h6>
-                    <h3 current-hours class="text-white text-3xl ml-6 mt-2">No Data</h3>
                 </div>
-                <div id="right-content" class="flex items-end flex-col">
-                    <div class="mr-6 mt-8">
-                        <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+            </div>
+
+            <!-- time container-->
+            <div id="background-container" class="mb-5 relative rounded-xl h-36 ml-5 mr-5 bg-[#56C1E5] overflow-hidden lg:h-1/2">
+                <img src="./images/icon-play.svg" class="absolute right-0 bottom-20 lg:bottom-44 right-3 z-10" alt="" srcset="">
+                <div id="timer-container" class="absolute lg:flex lg:flex-col w-full bg-[#1c1f4a] rounded-xl h-60 mt-8 z-20">
+                    <div id="upper-content" class="flex justify-between lg:mb-10">
+                        <h6 timer-title class="text-white ml-6 mt-5">No Data</h6>
+                        <div class="mr-6 mt-8">
+                            <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+                        </div>
                     </div>
-                    <p previous-hours class=" mr-6 mt-7 text-white text-xs">No Data</p>
+                    <div id="lower-content" class="flex justify-between lg:flex-col">
+                        <h3 current-hours class="text-white text-5xl ml-6 mt-2">No Data</h3>
+                        <p previous-hours class=" mr-6 mt-7 text-[#bdc1ff] ml-6 text-xs">No Data</p>
+                    </div>
+        
                 </div>
-    
             </div>
         </div>
 
-        <!-- time container -->
-        <div id="background-container" class="mb-5 relative rounded-xl h-36 ml-5 mr-5 bg-[#7436D2] overflow-hidden">
-            <img src="./images/icon-social.svg" class="absolute right-0 bottom-20 right-3 z-10" alt="" srcset="">
-            <div id="timer-container" class="absolute justify-between w-full flex bg-indigo-900 rounded-xl h-60 mt-8 z-20">
-                <div id="left-content" class="gap-y-6">
-                    <h6 timer-title class="text-white ml-6 mt-5">No Data</h6>
-                    <h3 current-hours class="text-white text-3xl ml-6 mt-2">No Data</h3>
-                </div>
-                <div id="right-content" class="flex items-end flex-col">
-                    <div class="mr-6 mt-8">
-                        <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+        <!-- time container-->
+        <div desktop-div class="lg:w-1/4">
+            <div id="background-container" class="mb-5 relative rounded-xl h-36 ml-5 mr-5 bg-[#FF5B7C] overflow-hidden lg:h-1/2">
+                <img src="./images/icon-study.svg" class="absolute right-0 bottom-20 lg:bottom-44 right-3 z-10" alt="" srcset="">
+                <div id="timer-container" class="absolute lg:flex lg:flex-col w-full bg-[#1c1f4a] rounded-xl h-60 mt-8 z-20">
+                    <div id="upper-content" class="flex justify-between lg:mb-10">
+                        <h6 timer-title class="text-white ml-6 mt-5">No Data</h6>
+                        <div class="mr-6 mt-8">
+                            <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+                        </div>
                     </div>
-                    <p previous-hours class=" mr-6 mt-7 text-white text-xs">No Data</p>
+                    <div id="lower-content" class="flex justify-between lg:flex-col">
+                        <h3 current-hours class="text-white text-5xl ml-6 mt-2">No Data</h3>
+                        <p previous-hours class=" mr-6 mt-7 text-[#bdc1ff] ml-6 text-xs">No Data</p>
+                    </div>
+        
                 </div>
-    
+            </div>
+
+            
+            <!-- time container-->
+            <div id="background-container" class="mb-5 relative rounded-xl h-36 ml-5 mr-5 bg-[#49CE81] overflow-hidden lg:h-1/2">
+                <img src="./images/icon-exercise.svg" class="absolute right-0 bottom-20 lg:bottom-44 right-3 z-10" alt="" srcset="">
+                <div id="timer-container" class="absolute lg:flex lg:flex-col w-full bg-[#1c1f4a] rounded-xl h-60 mt-8 z-20">
+                    <div id="upper-content" class="flex justify-between lg:mb-10">
+                        <h6 timer-title class="text-white ml-6 mt-5">No Data</h6>
+                        <div class="mr-6 mt-8">
+                            <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+                        </div>
+                    </div>
+                    <div id="lower-content" class="flex justify-between lg:flex-col">
+                        <h3 current-hours class="text-white text-5xl ml-6 mt-2">No Data</h3>
+                        <p previous-hours class=" mr-6 mt-7 text-[#bdc1ff] ml-6 text-xs">No Data</p>
+                    </div>
+        
+                </div>
             </div>
         </div>
 
-        <!-- time container -->
-        <div id="background-container" class="mb-5 relative rounded-xl h-36 ml-5 mr-5 bg-[#F0C65A] overflow-hidden">
-            <img src="./images/icon-self-care.svg" class="absolute bottom-24 right-3 z-10" alt="" srcset="">
-            <div id="timer-container" class="absolute justify-between w-full flex bg-indigo-900 rounded-xl h-60 mt-8 z-20">
-                <div id="left-content" class="gap-y-6">
-                    <h6 timer-title class="text-white ml-6 mt-5">No Data</h6>
-                    <h3 current-hours class="text-white text-3xl ml-6 mt-2">No Data</h3>
-                </div>
-                <div id="right-content" class="flex items-end flex-col">
-                    <div class="mr-6 mt-8">
-                        <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+        <!-- time container-->
+        <div desktop-div class="lg:w-1/4">
+            <div id="background-container" class="mb-5 relative rounded-xl h-36 ml-5 mr-5 bg-[#7436D2] overflow-hidden lg:h-1/2">
+                <img src="./images/icon-social.svg" class="absolute right-0 bottom-20 lg:bottom-44 right-3 z-10" alt="" srcset="">
+                <div id="timer-container" class="absolute lg:flex lg:flex-col w-full bg-[#1c1f4a] rounded-xl h-60 mt-8 z-20">
+                    <div id="upper-content" class="flex justify-between lg:mb-10">
+                        <h6 timer-title class="text-white ml-6 mt-5">No Data</h6>
+                        <div class="mr-6 mt-8">
+                            <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+                        </div>
                     </div>
-                    <p previous-hours class=" mr-6 mt-7 text-white text-xs">No Data</p>
+                    <div id="lower-content" class="flex justify-between lg:flex-col">
+                        <h3 current-hours class="text-white text-5xl ml-6 mt-2">No Data</h3>
+                        <p previous-hours class=" mr-6 mt-7 text-[#bdc1ff] ml-6 text-xs">No Data</p>
+                    </div>
+        
                 </div>
-    
+            </div>
+
+            <!-- time container-->
+            <div id="background-container" class="mb-5 relative rounded-xl h-36 ml-5 mr-5 bg-[#F0C65A] overflow-hidden lg:h-1/2">
+                <img src="./images/icon-self-care.svg" class="absolute right-0 bottom-20 lg:bottom-44 right-3 z-10" alt="" srcset="">
+                <div id="timer-container" class="absolute lg:flex lg:flex-col w-full bg-[#1c1f4a] rounded-xl h-60 mt-8 z-20">
+                    <div id="upper-content" class="flex justify-between lg:mb-10">
+                        <h6 timer-title class="text-white ml-6 mt-5">No Data</h6>
+                        <div class="mr-6 mt-8">
+                            <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+                        </div>
+                    </div>
+                    <div id="lower-content" class="flex justify-between lg:flex-col">
+                        <h3 current-hours class="text-white text-5xl ml-6 mt-2">No Data</h3>
+                        <p previous-hours class=" mr-6 mt-7 text-[#bdc1ff] ml-6 text-xs">No Data</p>
+                    </div>
+        
+                </div>
             </div>
         </div>
-
     </div>
 </body>
 </html>

@@ -7,8 +7,12 @@
     font-family: 'Rubik', sans-serif;
 }
 
-html {
+html, body {
     height: 100vh;
+}
+
+#container {
+    margin: 0 auto;
 }
 
 /* # Front-end Style Guide
